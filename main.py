@@ -60,7 +60,7 @@ def printGuessAccuracy(guess, actual):
     # just handles the transition between colors
     print(Style.RESET_ALL + " ", end="")
 
-# Write a Function that takes in a six-lettered word from the user
+# Function that takes in a six-lettered word from the user
 def getUserGuess():
   guess = input("Enter a 6 letter word: ")
   guess = guess.upper()
@@ -90,11 +90,13 @@ print()
 
 #Secret Word
 actual = "TARGET"
+
 #user enters a guess
 guess = ""
 enteredGuess = getUserGuess()
 print(enteredGuess)
 
+#check user guess
 printGuessAccuracy(enteredGuess, actual)
 count = 0
 while enteredGuess != actual and count <5:
